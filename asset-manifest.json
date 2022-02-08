@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/calulator-frontend-mentor/static/css/main.b7d69761.css",
+    "main.js": "/calulator-frontend-mentor/static/js/main.0a80941d.js",
+    "index.html": "/calulator-frontend-mentor/index.html",
+    "main.b7d69761.css.map": "/calulator-frontend-mentor/static/css/main.b7d69761.css.map",
+    "main.0a80941d.js.map": "/calulator-frontend-mentor/static/js/main.0a80941d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7d69761.css",
+    "static/js/main.0a80941d.js"
+  ]
+}
