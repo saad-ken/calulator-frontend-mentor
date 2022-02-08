@@ -1,1 +1,1 @@
-Calculator app made in react with styled components,with theme chnager.
+Calculator app made in react with styled components,with theme changer.
