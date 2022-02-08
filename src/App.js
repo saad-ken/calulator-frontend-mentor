@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { ThemeProvider } from "styled-components";
+// import BackGround from "./components/BackGround";
+import MainLayout from "./components/MainLayout";
+import { Globalstyles } from "./theme/Globalstyles";
+import { theme } from "./theme/Theme";
 
 function App() {
+  const [value, setValue] = useState("1");
+  const OnhandleChange = (eve) => {
+    setValue(eve.target.value);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Globalstyles value={value} />
+      {/* <Background value={value} /> */}
+      <MainLayout value={value} OnhandleChange={OnhandleChange} />
+    </ThemeProvider>
   );
 }
 
